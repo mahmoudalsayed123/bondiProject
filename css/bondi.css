@@ -1,0 +1,284 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Coming Soon', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    width: fit-content;
+}
+/* Start Componenet */
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.main-btn:hover {
+    background-color: #ff3150c7;
+}
+.main-title::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+}
+/* End Componenet */
+/* Start Nav */
+nav {
+    background-color: var(--dark-color);
+}
+.nav-item a {
+    color: white;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:focus,
+.nav-item .nav-link:hover {
+    color: var(--green-color);
+}
+.collapse .search  {
+    border-left: 1px solid var(--green-color);
+}
+.navbar-toggler {
+    border: 1px solid white;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+/* End Nav */
+/* Start Creativity Secition */
+.creativiy {
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+}
+/* End Creativity Secition */
+/* Start Graphic */
+.container .icon .num{
+    font-size: 180px;
+}
+.container .icon .pen {
+    font-size: 70px;
+    color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End Graphic */
+/* Start Our Work  */
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work .container ul li.active,
+.our-work .container ul li:hover {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.our-work .container .row .box::before {
+    content: "Application";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33d1cc82;
+    color: white;
+    font-size: 1.5rem;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.our-work .container .row .box:hover::before {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+/* End Our Work  */
+/* Start stuf */
+.stuf .description {
+    max-width: 500px;
+}
+/* End stuf */
+/* Start Team  */
+.team {
+    background-color: var(--section-color);
+}
+.team .title {
+    color: var(--yellow-color);
+}
+.team .info {
+    background-color: var(--green-color);
+}
+.team .row .box {
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.team .row .box:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+/* End Team  */
+/* Start Project  */
+.project {
+    background-color: var(--dark-color);
+}
+/* End Project  */
+/* Start Our Blog */
+.blog .container .row .card {
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.blog .container .row .card:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+/* End Our Blog */
+/* Start Subscribe */
+.sub {
+    background-color: var(--yellow-color);
+}
+.sub input[type = "text"] {
+    border: none;
+    border-bottom: 1px solid var(--section-color);
+    font-size: 15px;
+}
+.sub input[type = "text"]:focus {
+    outline: none;
+}
+.sub input[type = "text"]::placeholder {
+    color: #eff7fa;
+}
+.sub input[type = "submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.sub .submit:hover {
+    background-color:  var(--dark-color);
+}
+/* End Subscribe */
+/* Start Footer  */
+.footer {
+    background-color: var(--dark-color);
+    position: relative;
+    overflow: hidden;
+}
+.footer .copyright .name {
+    color: var(--green-color);
+}
+.footer .copyright .name-project {
+    color: var(--yellow-color);
+}
+.footer .row div ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.footer .row div ul li:hover {
+    color: var(--green-color);
+}
+.footer .row div .list-link li a {
+    text-align: center;
+}
+.footer .row div .list-link li a svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.footer .row div .list-link li a svg.facebook {
+    background-color: #1877f2;
+    color: white;
+}
+.footer .row div .list-link li a svg.twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+.footer .row div .list-link li a svg.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+.footer .row div .list-link li a svg.youtube {
+    background-color: #ff0000;
+    color: white;
+}
+/* End Footer  */
+/* Start Up And Down  */
+.show-up {
+    position: fixed;
+    bottom: 50px;
+    right: -40px;
+    width: 40px;
+    height: 30px;
+    background-color: var(--red-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.show-up.show {
+    right: 30px;
+}
+/* End Up And Down  */
